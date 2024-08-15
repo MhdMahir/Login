@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internship Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1{
+            background: linear-gradient(to right, #6ac9fc, #8fa4ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            cursor: default;
+            font-size: 40px;
+            font-family: cursive;
+            margin-bottom: 20px;
+        }
+        .fieldset{
+            width: 80%;
+            max-width: 800px;
+            background: linear-gradient(to right, #413ac587, #838bf787);
+            border: 3px solid #a4b9f4;
+            padding: 40px;
+            border-radius: 8px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        #uname,#age,#ph,#ad,#dstrct,#clg,#cv,#eml,#pswd{
+            color: #305da1;
+        }
+        label{
+            font-family: sans-serif;
+            color: #72aafd;
+            font-size: 23px;
+        }
+        input[type],input[list],textarea{
+            width: 70%;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 7px;
+            border: 3px solid #42a5f5;
+            background-color: #a4b9f4;
+        }
+        .gndr{
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin-left: 45px;
+            margin-bottom: 20px;
+            color: #305da1;
+        }
+        .intrst{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .button{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            width: 30%;
+            border-radius: 7px;
+            padding: 10px;
+            border: 3px solid #42a5f5;
+            background-color: #a4b9f4;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        button:hover{
+            background-color: #42a5f5;
+            border-color: #6ac9fc;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="fieldset">
+            <center><h1>INTERNSHIP REGISTRATION</h1></center>
+            <legend><h3 style="color: #478ef9; font-family: sans-serif; font-size: 27px;">Personal Information</h3></legend>
+            <div>
+                <center>
+                    <label for="uname"><b>Username</b></label><br><br>
+                    <input type="text" id="uname" name="fname" placeholder="First name">
+                    <input type="text" id="uname" name="lname" placeholder="Last name">
+                </center>
+            </div>
+            <label for="age"><b>Age</b></label><br>
+            <input type="date" id="age" name="age"><br><br>
+            <label for="gen"><b>Gender</b></label><br>
+            <div class="gndr">
+                <label for="gen1" style="color: #b7c7ff;">Male</label>
+                <input type="radio" id="gen1" name="gender" value="Male">
+                <label for="gen2" style="color: #b7c7ff;">Female</label>
+                <input type="radio" id="gen2" name="gender" value="Female">
+            </div>
+            <label for="ph"><b>Phone Number</b></label><br>
+            <input type="tel" id="ph" name="phone" placeholder="Phone number"><br><br>
+            <label for="ad"><b>Address</b></label><br>
+            <textarea rows="5" cols="40" id="ad" name="address" placeholder="Address"></textarea><br><br>
+            <label for="district"><b>District</b></label><br>
+            <input list="district" name="district" placeholder="District">
+            <datalist id="dstrct">
+                <option value="Kozhikode">
+                <option value="Wayanad">
+                <option value="Kannur">
+                <option value="Ernakulam">
+                <option value="Kasaragod">
+                <option value="Thrissur">
+            </datalist><br><br>
+            <label for="clg"><b>College Name</b></label><br>
+            <input type="text" id="clg" name="college" placeholder="College name"><br><br>
+            <label for="cv"><b>Upload your CV</b></label><br>
+            <input type="file" id="cv" name="cv"><br><br>
+            <label for="interest"><b>Area of Interest</b></label><br>
+            <div class="intrst">
+                <label for="intrst" style="color: #b7c7ff;">Medicine</label>
+                <input type="checkbox" id="intrst" name="intrst" value="Medicine">
+                <label for="intrst" style="color: #b7c7ff;">Architecture</label>
+                <input type="checkbox" id="intrst" name="intrst" value="Architecture">
+                <label for="intrst" style="color: #b7c7ff;">Engineering</label>
+                <input type="checkbox" id="intrst" name="intrst" value="Engineering">
+                <label for="intrst" style="color: #b7c7ff;">Law</label>
+                <input type="checkbox" id="intrst" name="intrst" value="Law">
+            </div><br>
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" id="eml" name="email" placeholder="Enter your email"><br><br>
+            <label for="pswd"><b>Password</b></label><br>
+            <input type="password" id="pswd" name="password" placeholder="Password"><br><br>
+            <div class="button">
+                <button type="submit">
+                    <a href="index.html">Register</a>
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

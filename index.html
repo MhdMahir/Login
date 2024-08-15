@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .fieldset{
+            background: linear-gradient(to right, #413ac587, #838bf787);
+            border: 3px solid #42a4f59c;
+            padding: 20px;
+            margin: 20px;
+            width: 30%;
+            border-radius: 8px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: cursive;
+            background: linear-gradient(to right, #6ac9fc, #8fa4ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            cursor: default;
+            margin-bottom: 20px;
+        }
+        .user,.us{
+            color: #305da1;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        #use{
+            width: 100%;
+            margin: 0 12%;
+            align-items: center;
+        }
+        input[type]{
+            width: 70%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 7px;
+            border: 3px solid #42a5f5;
+            background-color: #a4b9f4;
+        }
+        .button{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button{
+            width: 45%;
+            border-radius: 7px;
+            padding: 10px;
+            border: 3px solid #42a5f5;
+            background-color: #a4b9f4;
+            margin-bottom: 20px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        button:hover{
+            background-color: #42a5f5;
+            border-color: #6ac9fc;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fieldset">
+        <h1>LOGIN</h1>
+        <form action="rsme.html">
+            <div id="use">
+                <input type="text" class="user" name="username" placeholder="Username" required>
+                <input type="password" class="us" name="password" placeholder="Password" required>
+            </div>
+            <div class="button">
+                <button type="button" onclick="location.href='rgstr.html'">Register</button>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
