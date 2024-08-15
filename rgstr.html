@@ -89,7 +89,7 @@
     </style>
 </head>
 <body>
-    <form action="">
+    <form action="process_registration.php" method="POST"> <!-- Set action to your server-side script -->
         <div class="fieldset">
             <center><h1>INTERNSHIP REGISTRATION</h1></center>
             <legend><h3 style="color: #478ef9; font-family: sans-serif; font-size: 27px;">Personal Information</h3></legend>
@@ -143,9 +143,7 @@
             <label for="pswd"><b>Password</b></label><br>
             <input type="password" id="pswd" name="password" placeholder="Password"><br><br>
             <div class="button">
-                <button type="submit">
-                    <a href="index.html">Register</a>
-                </button>
+                <button type="submit">Register</button>
             </div>
         </div>
     </form>
